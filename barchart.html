@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie and Bar Charts</title>
+    <!-- Include Highcharts library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <!-- Container for the pie chart -->
+    <div id="pieChartContainer" style="width: 45%; height: 400px; display: inline-block;"></div>
+    
+    <!-- Container for the bar chart -->
+    <div id="barChartContainer" style="width: 45%; height: 400px; display: inline-block;"></div>
+
+    <script>
+        // Create the pie chart
+        Highcharts.chart('pieChartContainer', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: 'Taken Services (Pie Chart)',
+                align: 'left'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b><br>{point.percentage:.1f}%'
+                    }
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                colorByPoint: true,
+                data: [{
+                    name: 'Personal Care',
+                    y: 21.3
+                }, {
+                    name: 'Dance Partner',
+                    y: 18.7
+                }, {
+                
+                    name: 'Medication',
+                    y: 18.7
+                }, {
+                    name: 'Gossip Partner',
+                    y: 18.7
+                }, {
+                    name: 'Respite Care',
+                    y: 18.7
+                }, {
+                    name: 'Home Safety',
+                    y: 4.7
+                }, {
+                    name: 'Housekeeping',
+                    y: 18.7
+                }, {
+                    name: 'Health Checkup',
+                    y: 18.7
+                
+                }, {
+                    name: 'Chore Service',
+                    y: 20.2
+                }, {
+                    name: 'Financial Help',
+                    y: 14.2
+                }, {
+                    name: 'Transportation',
+                    y: 25.6
+                }]
+            }]
+        });
+
+        // Create the bar chart
+        Highcharts.chart('barChartContainer', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Departamental Strength of the Company (Bar Chart)',
+                align: 'left'
+            },
+            xAxis: {
+                categories: ['Customer Support', 'Development', 'Sales', 'Marketing', 'Other']
+            },
+            yAxis: {
+                title: {
+                    text: 'Percentage (%)'
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                data: [21.3, 18.7, 20.2, 14.2, 25.6]
+            }]
+        });
+    </script>
+</body>
+</html>

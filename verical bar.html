@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie and Vertical Bar Charts</title>
+    <!-- Include Highcharts library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <!-- Container for the pie chart -->
+    <div id="pieChartContainer" style="width: 45%; height: 400px; display: inline-block;"></div>
+    
+    <!-- Container for the vertical bar chart -->
+    <div id="verticalBarChartContainer" style="width: 45%; height: 400px; display: inline-block;"></div>
+
+    <script>
+        // Create the pie chart
+        Highcharts.chart('pieChartContainer', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: 'Taken Services (Pie Chart)',
+                align: 'left'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b><br>{point.percentage:.1f}%'
+                    }
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                colorByPoint: true,
+                data: [{
+                    name: 'Chore Service',
+                    y: 21.3
+                }, {
+                    name: 'Dance Partner',
+                    y: 18.7
+                }, {
+                    name: 'Financial Help',
+                    y: 20.2
+                }, {
+                    name: 'Gossip Partner',
+                    y: 14.2
+                }, {
+                    name: 'Home Safety',
+                    y: 14.2
+                }, {
+                    name: 'Meal Delivery',
+                    y: 14.2
+                }, {
+                    name: 'Medication',
+                    y: 14.2
+                }, {
+                    name: 'Personal Care',
+                    y: 14.2
+                }, {
+                    name: 'Respite Care',
+                    y: 14.2
+                }, {
+                    name: 'Transportation',
+                    y: 14.2
+                }, {
+                    name: 'Housekeeping',
+                    y: 14.2
+                    
+                }, {
+                    name: 'Health Checkup',
+                    y: 25.6
+                }]
+            }]
+        });
+
+        // Create the vertical bar chart
+        Highcharts.chart('verticalBarChartContainer', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Taken Services (Vertical Bar Chart)',
+                align: 'left'
+            },
+            xAxis: {
+                categories: ['Chore Service', 'Dance Partner', 'Financial Help', 'Gossip Partner', 'Health Checkup', 'Home Safety', 'Housekeeping', 'Meal Delivery', 'Medication', 'Respite Care', 'Transportation', 'Personal Care']
+            },
+            yAxis: {
+                title: {
+                    text: 'Percentage (%)'
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                data: [21.3, 18.7, 20.2, 14.2, 25.6,12.4,14.3,13.5,16.9,11.4,10.1,12.3]
+            }]
+        });
+    </script>
+</body>
+</html>

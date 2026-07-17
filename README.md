@@ -38,3 +38,8 @@ An administrator is assigned to oversee and manage the transaction process, ensu
 
 ![Admin Dashboard](dash.png)
 
+In conclusion, the primary objective of this project was to create a platform that connects elderly individuals with young volunteers to facilitate essential services while fostering meaningful intergenerational relationships. The system was developed after recognizing the needs of elderly people who require additional care and support in their daily lives, as well as the willingness of many enthusiastic young adults to dedicate their time to helping others.
+
+The proposed solution successfully addresses these needs by providing an efficient and user-friendly platform for requesting, managing, and completing service tasks. Overall, the developed system fulfills its intended objectives and demonstrates the potential to improve the quality of life for elderly individuals while encouraging social responsibility and stronger connections between generations.
+
+

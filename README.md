@@ -4,3 +4,7 @@ Welcome to SilverConnect, connecting generation, expanding happiness. A non-prof
 
 # Landing Page
 ![Landing Page](landing_page.png)
+
+# Login Page(Elderly)
+
+![Login Page (Elderly)](login_elderly.png)

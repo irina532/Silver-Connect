@@ -8,3 +8,7 @@ Welcome to SilverConnect, connecting generation, expanding happiness. A non-prof
 # Login Page(Elderly)
 
 ![Login Page (Elderly)](login_elderly.png)
+
+# Profile Page(Elderly)
+
+![Profile Page(Elderly)](profile_elderly.png)

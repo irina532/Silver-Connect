@@ -22,3 +22,10 @@ If an elderly wants to take a service like transportation ,he/she will click on 
 # Login Page(Service Provider)
 
 ![Login Page(Service Provider)](login_provider.png)
+
+# Profile Page (Service Provider)
+
+Once the service has been completed, the service provider will click the **Task Completed** button to confirm the completion of the assigned task. This action finalizes the service request, marking the entire process as successfully completed.
+
+![Profile Page(Service Provider)](profile_provider.png)
+

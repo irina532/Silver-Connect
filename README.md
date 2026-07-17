@@ -29,3 +29,8 @@ Once the service has been completed, the service provider will click the **Task 
 
 ![Profile Page(Service Provider)](profile_provider.png)
 
+# Admin Login Page
+
+An administrator is assigned to oversee and manage the transaction process, ensuring that all service transactions are conducted accurately and efficiently.
+![Admin Login Page](admin_page.png)
+
